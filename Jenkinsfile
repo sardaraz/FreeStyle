@@ -5,12 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 // Run the Python code
-               bash 'javac HelloWorld.java'
+               bat 'javac HelloWorld.java'
             }
         }
         stage('Run') {
             steps {
-               bash 'java HelloWorld'
+               bat 'java HelloWorld'
             }
         }
     }
